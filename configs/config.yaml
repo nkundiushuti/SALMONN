@@ -14,11 +14,11 @@
 
 model:
   # paths
-  llama_path: "path to llama model"
-  whisper_path: "path to whisper model"
-  beats_path: "path to beats model"
+  llama_path: "/home/jupyter/vicuna-7b-v1.5"
+  whisper_path: "/home/jupyter/whisper-large-v2"
+  beats_path: "/home/jupyter/beats"
 
-  ckpt: "model ckpt" # if not "", load model from ckpt for training or evaluation
+  ckpt: "/home/jupyter/SALMONN-7B/salmonn_7b_v0.pth" # if not "", load model from ckpt for training or evaluation
 
   freeze_whisper: True
   freeze_beats: True
@@ -52,12 +52,12 @@ datasets:
   valid_ann_path: "path to valid data"
   test_ann_path: "path to test data"
 
-  whisper_path: "path to whisper model"
+  whisper_path: "/home/jupyter/whisper-large-v2"
 
 run:
   # log & settings
   seed: 42
-  output_dir: "output directory"
+  output_dir: "/home/jupyter/salmonn-output"
   evaluate: False # if True, only evaluate model on test data
 
   log_freq: 5
