@@ -16,7 +16,7 @@ model:
   # paths
   llama_path: "/home/jupyter/vicuna-7b-v1.5"
   whisper_path: "/home/jupyter/whisper-large-v2"
-  beats_path: "/home/jupyter/beats"
+  beats_path: "/home/jupyter/beats/BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt2.pt"
 
   ckpt: "/home/jupyter/SALMONN-7B/salmonn_7b_v0.pth" # if not "", load model from ckpt for training or evaluation
 
